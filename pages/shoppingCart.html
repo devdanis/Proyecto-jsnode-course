@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/cart-style.css" />
+		<title>Carrito</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<!-- barra de navegacion -->
+				<div>
+					<a href="#">
+						<!-- logo --><img
+							src="../assets/img/branding/logo_light_horizontal.svg"
+							alt="logo de funkoshop"
+					/></a>
+				</div>
+				<ul>
+					<li>
+						<a href="./pages/shop.html">Shop</a>
+					</li>
+					<li>
+						<a href="./pages/contacto.html">Contacto</a>
+					</li>
+					<li>
+						<a href="./pages/login.html">Login</a>
+					</li>
+					<li>
+						<a href="./pages/shoppingCart.html"
+							><img
+								src="../assets/icons/cart-icon.svg"
+								alt="icono del carro de compras"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div class="cart_title">
+					<h2>CARRITO DE COMPRAS</h2>
+				</div>
+				<div class="cart_products_title_container">
+					<div class="cart_products_title_container_item1">
+						<p>DETALLE DE PRODUCTO</p>
+					</div>
+					<div class="cart_products_title_container_item2">
+						<p>CANTIDAD</p>
+					</div>
+					<div class="cart_products_title_container_item3">
+						<p>TOTAL</p>
+					</div>
+				</div>
+
+				<div
+					class="cart_products_detail"
+					style="
+						display: grid;
+						grid-template-columns: 1.2fr 1fr 1fr 1fr;
+						border: solid 1px black;
+						align-items: center;
+					"
+				>
+					<picture>
+						<img
+							src="../assets/multimedia/star-wars/baby-yoda-1.webp"
+							alt=""
+							width="300vw"
+						/>
+					</picture>
+
+					<div>
+						<h3>BABY YODA BLUEBALL</h3>
+						<p>star wars</p>
+						<p>precio: $ 1799,99</p>
+					</div>
+					<div>
+						<input type="number" name="cantidad" id="" value="0" />
+					</div>
+					<div>
+						<p>$ 3599,98</p>
+					</div>
+				</div>
+				<!-- <div> -->
+				<!-- <div style="text-align: right;margin-right: 25em;">
+                        <h2>Resumen</h2>
+                    </div> -->
+
+				<div
+					style="
+						display: grid;
+						grid-template-columns: 60% 30% 10%;
+						grid-template-rows: 10% 90%;
+					"
+				>
+					<div style="grid-column-start: 2">
+						<h3 style="margin: 0">Resumen</h3>
+					</div>
+					<div class="resume_payment">
+						<div class="resume_payment_table">
+							<p>Cantidad de Elementos</p>
+						</div>
+						<div class="resume_payment_table"><p>3</p></div>
+						<div class="resume_payment_table"><p>Subtotal</p></div>
+						<div class="resume_payment_table"><p>$ 3599,98</p></div>
+						<div class="resume_payment_table"><p>Envio</p></div>
+						<div class="resume_payment_table"><p>$ 0,00</p></div>
+						<div class="resume_payment_table"><h3>Total</h3></div>
+						<div class="resume_payment_table"><p>$ 3599,98</p></div>
+					</div>
+					<!-- </div> -->
+					<div class="button_payment">
+						<input type="button" value="Ir a Pagar" />
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<section>
+					<!-- para separar todos del copyright -->
+					<ul>
+						<li>
+							<a href="./pages/shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="./pages/register.html">Registrarse</a>
+						</li>
+						<li>
+							<a href="./pages/contacto.html">Contacto</a>
+						</li>
+						<li>
+							<a href="./pages/login.html">Login</a>
+						</li>
+					</ul>
+					<a href="#"
+						><!-- logo --><img
+							src="../assets/img/branding/isotype.svg"
+							alt="logo de funkoshop"
+						/>
+					</a>
+				</section>
+				<p>todos los derechos reservados - comisión 23573 grupo 9</p>
+			</nav>
+		</footer>
+	</body>
+</html>
