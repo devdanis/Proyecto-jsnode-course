@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item | FunkoShop</title>
+</head>
+<body>
+    <header> <!-- encabezado -->
+        <nav> <!-- barra de navegacion -->
+	    <div>
+		<a href="#"> <!-- logo -->
+                    <img src="./assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
+		</a>
+	    </div>	
+            <ul>
+                <li>
+                    <a href="./pages/shop.html">Shop</a>
+                </li>
+                <li>    
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./pages/login.html">Login</a>
+                </li>
+                <li>
+		    <a href="./pages/shoppingCart.html">
+                        <img src="./assets/icons/cart-icon.svg" alt="icono del carro de compras">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <p>STAR WARS</p>
+                <h3>BABY YODA BLUEBALL</h3>
+                <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <p>$ 1799,99</p>
+
+                <form action="" method="post">
+                    <input type="text" name="quantity" value="0" min="1">
+                    <button type="button" data-quantity-change="1">+</button>
+                    <button type="button" data-quantity-change="-1">-</button>
+                    <input type="button" onclick="alert" value="Agregar al Carrito">
+                </form>
+
+                <p>Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p>
+            </article>
+            <picture>
+                <img src="./assets/multimedia/star-wars/baby-yoda-1.webp" alt="imagen del baby yoda">
+            </picture>
+        </section>
+
+        <section>
+            <h2>PRODUCTOS RELACIONADOS</h2>
+            <ul>
+                <li>
+                    <article>
+                        <a href="">
+                            <picture>
+                                <img src="./assets/multimedia/star-wars/trooper-1.webp"
+                                    alt="figura de soldado stormtrooper">
+                            </picture>
+                            <div>
+                                <p>STAR WARS</p>
+                                <h4>STORMTROOPER LIGHTSABER</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="">
+                            <picture>
+                                <img src="./assets/multimedia/pokemon/pidgeotto-1.webp"
+                                    alt="figura de pokemon pidgeotto">
+                            </picture>
+                            <div>
+                                <p>POKEMON</p>
+                                <h4>PIDGEOTTO</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="">
+                            <picture>
+                                <img src="./assets/multimedia/harry-potter/luna-1.webp"
+                                    alt="figura de luna lovegood lion mask">
+                            </picture>
+                            <div>
+                                <p>HARRY POTTER</p>
+                                <h4>LUNA LOVEGOOD LION MASK</h4>
+                                <p>$ 1799,99</p>
+                                <p>3 CUOTAS SIN INTERES</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <section> <!-- para separar todos del copyright -->
+                <ul>
+                    <li>
+                        <a href="./pages/shop.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/register.html">Registrarse</a>
+                    </li>
+                   
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+					
+					 <li>
+                        <a href="./pages/login.html">Login</a>
+                    </li>
+                </ul>
+                <a href="#"> <!-- logo -->
+                    <img src="./assets/img/branding/isotype.svg" alt="logo de funkoshop">
+                </a>
+            </section>
+            <p>Todos los derechos reservados - comisión 23573 grupo 9</p>
+        </nav>
+    </footer>
+    
+</body>
+</html>
