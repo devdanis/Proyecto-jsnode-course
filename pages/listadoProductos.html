@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listadoProductos</title>
+</head>
+<body>
+    <header> <!-- encabezado -->
+        <nav> <!-- barra de navegacion -->
+        <div>
+        <a href="#"> <!-- logo -->
+                    <img src="./assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
+        </a>
+        </div>  
+            <ul>
+                <li>
+                    <a href="./pages/shop.html">Shop</a>
+                </li>
+                <li>    
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./pages/login.html">Login</a>
+                </li>
+                <li>
+            <a href="./pages/shoppingCart.html">
+                        <img src="./assets/icons/cart-icon.svg" alt="icono del carro de compras">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<section> <!-- <Search> -->
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+      <!-- <input type="search" value="Buscar"> -->
+      <button type="submit"></button>
+      <div>
+        <label for="search"> </label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="código, nombre o categoria"
+          value="código, nombre o categoria"
+          required
+        />
+      </div>
+    </form>
+</section>
+
+<section><!-- <Items list> -->
+    <h1>LISTADO DE PRODUCTOS</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Código</th>
+          <th>Nombre del Producto</th>
+          <th>Categoría</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>STW001001</td>
+          <td>Baby Yoda Blueball</td>
+          <td>STARWARS</td>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>STW001002</td>
+          <td>Boba Fett Fighter</td>
+          <td>STARWARS</td>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>STW001003</td>
+            <td>Luke Skylwalker & Grogu</td>
+            <td>STARWARS</td>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>STW001004</td>
+            <td>Stormtrooper Lightsaber</td>
+            <td>STARWARS</td>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+      </tbody>
+    </table>
+
+</section>
+
+    <footer>
+        <nav>
+            <section> <!-- para separar todos del copyright -->
+                <ul>
+                    <li>
+                        <a href="./pages/shop.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/register.html">Registrarse</a>
+                    </li>
+
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+
+                     <li>
+                        <a href="./pages/login.html">Login</a>
+                    </li>
+                </ul>
+                <a href="#"> <!-- logo -->
+                    <img src="./assets/img/branding/isotype.svg" alt="logo de funkoshop">
+                </a>
+            </section>
+            <p>todos los derechos reservados - comisión 23573 grupo 9</p>
+        </nav>
+    </footer>
+</body>
+</html>
