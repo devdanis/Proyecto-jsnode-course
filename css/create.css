@@ -76,7 +76,6 @@ header {
     color: rgb(255, 255, 255);
     padding: 8px;
     transition:  background .3s ease-in-out;
-    position: relative;
 }
 
 .navbar-link:hover {
@@ -172,6 +171,13 @@ footer {
     padding: 68px;
 }
 
+.links-footer {
+    width: 100%;
+}
+
+.navbar-item {
+    cursor: pointer;
+}
 
 .copyright {
     text-align: center;
