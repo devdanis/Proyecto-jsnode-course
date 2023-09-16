@@ -42,7 +42,7 @@ header {
     max-width: 300px;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,11 +87,25 @@ nav {
 .submenu-link {
     color: azure;
     display: block;
-    padding: 8px 16px;
+    padding: 8px 16px 8px;
     font-size: medium;
 }
 
 .submenu-link:hover {
     background-color: rgb(192, 30, 30);
     transition:  background .3s ease-in-out;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #30343F;
+    padding: 68px;
+}
+
+
+.copyright {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
 }

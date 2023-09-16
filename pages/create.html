@@ -11,7 +11,7 @@
 
 <body>
     <header> <!-- encabezado -->
-        <nav class="container"> <!-- barra de navegacion -->
+        <nav class="navbar container"> <!-- barra de navegacion -->
             <div class="logo-header">
                 <a href=".././index.html"> <!-- logo -->
                     <img src=".././assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
@@ -38,7 +38,7 @@
         </nav>
     </header>
 
-    <section>
+    <section class="container">
         <h1>CREAR NUEVO ITEM</h1>
         <form method="post" action="">
             <label for="categorias">Categoría:</label>
@@ -86,31 +86,34 @@
 
     </section>
     <footer>
-        <nav>
-            <section> <!-- para separar todos del copyright -->
-                <ul>
+        <nav class="navbar container">
+                <ul class="navbar-item submenu-item">
 
-                    <li> <a href="../index.html">Inicio</a> </li>
-
-                    <li>
-                        <a href="./register.html">Registrarse</a>
+                    <li class="navbar-link"> 
+                        <a class="navbar-link" href="../index.html">Inicio</a>
                     </li>
 
-                    <li> <a href="./contacto.html">Contacto</a> </li>
-                    <li> <a href="./login.html">Login</a> </li>
+                    <li class="navbar-link">
+                        <a class="navbar-link" href="./register.html">Registrarse</a>
+                    </li>
+
+                    <li class="navbar-link"> 
+                        <a class="navbar-link" href="./contacto.html">Contacto</a> 
+                    </li>
+
+                    <li class="navbar-link"> 
+                        <a class="navbar-link" href="./login.html">Login</a> 
+                    </li>
 
                 </ul>
-                <div>
-                    <a href="../index.html"> <!-- logo -->
 
+                <picture>
+                    <!-- <a href="../index.html"> logo -->
                         <img src="../assets/img/branding/isotype.svg" alt="logo de funkoshop">
-
-                    </a>
-                </div>
-
-            </section>
-            <p>Todos los derechos reservados - comisión 23573 grupo 9</p>
-        </nav>
+                    <!-- </a> -->
+                </picture>
+            </nav>
+            <p class="copyright">Todos los derechos reservados - comisión 23573 grupo 9</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
