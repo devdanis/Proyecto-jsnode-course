@@ -5,15 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/shop-style.css">
+		
 		<title>Shop</title>
 	</head>
 
 	<body>
 		<header>
 			<!-- encabezado -->
-			<nav>
+			<nav class="navbar container">
 				<!-- barra de navegacion -->
-				<div>
+				<div class="navbar__logo">
 					<a href=".././index.html">
 						<!-- logo -->
 						<img
@@ -22,25 +23,32 @@
 						/>
 					</a>
 				</div>
-				<ul>
-					<li><a href=".././index.html">Home</a></li>
-					<li><a href="./contacto.html">Contacto</a></li>
-					<li><a href="./login.html">Login</a></li>
-					<li>
-						<a href="./shoppingCart.html">
-							<img
-								src=".././assets/icons/cart-icon.svg"
-								alt="icono del carro de compras"
-							/>
-						</a>
-					</li>
-				</ul>
+				
+				<div>
+					<img class="navbar__bar" src=".././assets/icons/burger-bar.svg" />
+				</div>
+				
+				
+					<ul class="navbar__menu">
+						<li><a class="navbar__link" href=".././index.html">Home</a></li>
+						<li><a class="navbar__link" href="./contacto.html">Contacto</a></li>
+						<li><a class="navbar__link" href="./login.html">Login</a></li>
+						<li>
+							<a class="navbar__cart" href="./shoppingCart.html">
+								<img class="navbar__cart-icon"
+									src=".././assets/icons/cart-icon.svg"
+									alt="icono del carro de compras"
+								/>
+							</a>
+						</li>
+					</ul>
+				
 			</nav>
 		</header>
-		<main>
-			<section>
-				<form method="get" action="">
-					<label for="buscar">Buscar</label>
+		<main class='main-container'>
+			<section class='form-container'>
+				<form class="form-element" method="get" action="">
+					<label class="form__label-big" for="buscar">Buscar</label>
 					<input
 						type="text"
 						id="buscar"
@@ -48,14 +56,14 @@
 						placeholder="item o categoría"
 					/>
 
-					<label for="ordenar">Ordenar por</label>
+					<label class="form__label-big" for="ordenar">Ordenar por</label>
 					<select id="ordenar" name="ordenar">
-						<option>Precio</option>
-						<option>Alfabeto</option>
-						<option>Stock</option>
+						<option></option>
+						<option>Mayor a menor</option>
+						<option>Menor a mayor</option>
 					</select>
 
-					<p>Precio</p>
+					<label class="form__label-big">Precio</label>
 
 					<label for="min">Min</label>
 					<input type="number" id="min" name="min" value="0" />
@@ -63,7 +71,7 @@
 					<label for="max">Max</label>
 					<input type="number" id="max" name="max" value="0" />
 
-					<p>Filtrar</p>
+					<label class="form__label-big">Filtrar</label>
 					<input type="checkbox" name="nuevo" id="nuevo" />
 					<label for="nuevo">Nuevos</label>
 					<input type="checkbox" name="oferta" id="oferta" />
@@ -74,13 +82,13 @@
 					<label for="favoritos">Favoritos</label>
 				</form>
 			</section>
-			<section>
+			<section class="items-container">
 				<div class="item">
 					<p>Nuevo</p>
 					<a href="">
 						<img src=".././assets/multimedia/harry-potter/harry-1.webp" />
 					</a>
-					<a>
+					<a href="">
 						<div>
 							<p>Harry Potter</p>
 							<p>Harry Potter</p>
@@ -202,16 +210,18 @@
 					</a>
 				</div>
 			</section>
-			<div>
-				<a href=""> < </a>
-				<a href="">1</a>
-				<a href="">2</a>
-				<a href="">3</a>
-				<a href="">4</a>
-				<a href="">5</a>
-				<a href="">6</a>
-				<a href=""> > </a>
-			</div>
+			<section class="pages-container">
+				<div>
+					<a href=""> < </a>
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href=""> > </a>
+				</div>	
+			</section>
 		</main>
 		<footer>
 			<section>
