@@ -1,6 +1,5 @@
+* {
 
-*{
-	
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -8,86 +7,86 @@
 }
 
 
-body{
+body {
 
-    box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
-img{
+ul > li {
 
-    width: 100%;
-   
+	margin: 0 5px 0 5px;
+	list-style: none;
+
+}
+
+li>a {
+	color: white;
+	text-decoration: none;
+}
+
+
+img {
+
+	width: 100%;
+
 
 }
 
 /* HEADER START */
 
-header{
-    
+header {
+
 	background-color: #30344F;
-/*     height: 144px; */
+	/*     height: 144px; */
 	padding: 15px;
-	
+
 }
 
 
-.container{
-	
+.container {
+
 	max-width: 320px;
 	margin: 0 auto;
-	
-	
-}
 
-.navbar{
-
-	
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
 
 }
 
+.navbar {
 
-.navbar__logo{
 
-    max-width: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 
 }
 
-.navbar__bar{
-	
+
+.navbar__logo {
+
+	max-width: 120px;
+
+}
+
+.navbar__bar {
+
 	color: white;
 	height: 20px;
 	width: 20px;
-	
-}
-
-.navbar__menu{
-
-    display: none;
-   
 
 }
 
+.navbar__menu {
 
-.navbar__menu > li {
+	display: none;
 
-    margin: 0 5px 0 5px;
-    list-style: none;
-    
+
 }
 
-li > a{
-    color: white;
-    text-decoration: none;
-}
+.navbar__cart-icon {
 
-.navbar__cart-icon{
-
-    width: 16px;
+	width: 16px;
 	height: 14px;
 
 }
@@ -97,21 +96,21 @@ li > a{
 
 /* MAIN START*/
 
-.main-container{
-	
+.main-container {
+
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
-.main__search-container{
-	
+.main__search-container {
+
 	display: flex;
 	flex-direction: column;
 }
 
-.main__icon-container{
-	
+.main__icon-container {
+
 	border: none;
 	border-radius: 15px;
 	background: #30344F;
@@ -119,108 +118,174 @@ li > a{
 	align-self: center;
 	min-width: 150px;
 	height: 40px;
-	
+
 }
 
-.main__search-icon{
-	
-	width:16px;
+.main__search-icon {
+
+	width: 16px;
 	height: 14px;
-	
+
 }
 
-.form-container{
-	
+.form-container {
+
 	display: none;
-	
+
 }
 
-.items-container{
-	
+.items-container {
+
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
 }
 
-.item{
-	
+.item {
+
 	display: flex;
 	flex-direction: column;
-	
-	margin-bottom: 15px; 
-	
+
+	margin-bottom: 15px;
+
 }
 
-.item__status{
-	
+.item__status {
+
 	margin-right: 10px;
 	align-self: end;
 	background-color: #FF3333;
 	color: white;
 	padding: 5px 10px;
-	
+
 }
 
-a{
-	
+a {
+
 	text-decoration: none;
-	
-	
+	color: #212B36;
 }
 
-.item__info > p {
-	
-	/* margin-left: 10px;
-	margin-bottom: 10px; */
-	
+.item__info>p {
+
 	padding: 8px;
-	
+
 }
 
-.item__info > .item__info-title{
-	
+.item__info>.item__info-title {
+
 	color: #333333;
 	font-size: .8em;
 	font-weight: 600;
-	
+
 }
 
-.item__info > .item__info-name{
-	
+.item__info>.item__info-name {
+
 	color: #111111;
 	font-weight: bold;
 }
 
-.item__info > .item__info-price{
-	
+.item__info>.item__info-price {
+
 	color: #333333;
 	font-weight: 500;
 	font-size: 1.1em;
 }
 
-.item__info > .item__info-interest{
-	
+.item__info>.item__info-interest {
+
 	color: #1D8485;
-	font-size:  .7em;
+	font-size: .7em;
 	font-weight: 800;
 }
 
 
+.pages__link {
 
-.item > a > img{
-	
-	width: 100%;
-	
-	
-	
-}
-
-.pages__link{
-	
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
+}
+
+.pages__link>a {
+
+	border-radius: 4px;
+	margin: 20px 2px;
+	border: 1px solid #919EAB;
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	font-weight: bolder;
+	padding-top: 10px;
+
+}
+
+.page__link-disabled {
+
+	background-color: #919EAB;
+
+}
+
+a>.pages__less-than-icon,
+.pages__greather-than-icon {
+
+	width: 16px;
+	height: 19px;
+
+
+}
+
+.pages__link>.page__link-current {
+
+	color: #FF3333;
+	border: 1px solid #FF3333;
+
 }
 
 /* MAIN END*/
+
+/*FOOTER START*/
+
+footer {
+
+	height: 100%;
+	background-color: #30344F;
+	color: white;
+}
+
+.footer__nav{
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+
+}
+
+.footer__logo{
+
+	margin: 20px 0;
+
+}
+
+.footer__menu{
+
+	display: flex;
+	margin-bottom: 20px;
+
+}
+
+.footer__menu > li {
+
+	margin: 0 10px;
+
+}
+
+.footer__copyright{
+
+	padding: 20px 10px;
+
+}
+
+/*FOOTER END*/
