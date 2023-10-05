@@ -22,7 +22,7 @@
 				</a>
 			</div>
 
-			<div>
+			<div class="navbar__burger-icon">
 				<img class="navbar__bar" src=".././assets/icons/burger-bar.svg" alt="icono de barra de busqueda" />
 			</div>
 
@@ -41,7 +41,7 @@
 
 		</nav>
 	</header>
-	<main class='main-container'>
+	<main class='main-container container'>
 
 		<section class="main__search-container">
 
@@ -52,36 +52,44 @@
 			<section class='form-container'>
 				<form class="form-element" method="get" action="">
 					<label class="form__label-big" for="buscar">Buscar</label>
-					<input type="text" id="buscar" name="buscar" placeholder="Item o Categoría" />
+					<input class="form__search-input" type="text" id="buscar" name="buscar"
+						placeholder="Item o Categoría" />
 
 					<label class="form__label-big" for="ordenar">ORDENAR POR</label>
-					<select id="ordenar" name="ordenar">
-						<option></option>
+					<select class="form__search-input" id="ordenar" name="ordenar">
 						<option>Mayor a menor</option>
 						<option>Menor a mayor</option>
 					</select>
 
 					<label class="form__label-big">PRECIO</label>
 
-					<label for="min">MIN</label>
-					<input type="number" id="min" name="min" value="0" />
-					<p>-</p>
-					<label for="max">MAX</label>
-					<input type="number" id="max" name="max" value="0" />
+					<div>
+						<label for="min">MIN</label>
+						<input class="form__input-number" type="text" id="min" name="min" value="0" />
+						<label for="max"><span>-<span> MAX</label>
+						<input class="form__input-number" type="text" id="max" name="max" value="0" />
+					</div>
+
 
 					<label class="form__label-big">FILTRAR</label>
-					<input type="checkbox" name="nuevo" id="nuevo" />
 
-					<label for="nuevo">NUEVOS</label>
-					<input type="checkbox" name="oferta" id="oferta" />
+					<div class="form__checkbox">
+						<input class="form__input-checkbox" type="checkbox" name="nuevo" id="nuevo" />
+						<label class="form__label-checkbox" for="nuevo">NUEVOS</label>
+					</div>
+					<div class="form__checkbox">
+						<input class="form__input-checkbox" type="checkbox" name="oferta" id="oferta" />
+						<label class="form__label-checkbox" for="oferta">OFERTAS</label>
+					</div>
+					<div class="form__checkbox">
+						<input class="form__input-checkbox" type="checkbox" name="especial" id="especial" />
+						<label class="form__label-checkbox" for="especial">EDICIÓN ESPECIAL</label>
+					</div>
+					<div class="form__checkbox">
+						<input class="form__input-checkbox" type="checkbox" name="favoritos" id="favoritos" />
+						<label class="form__label-checkbox" for="favoritos">FAVORITOS</label>
+					</div>
 
-					<label for="oferta">OFERTAS</label>
-
-					<input type="checkbox" name="especial" id="especial" />
-					<label for="especial">EDICIÓN ESPECIAL</label>
-
-					<input type="checkbox" name="favoritos" id="favoritos" />
-					<label for="favoritos">FAVORITOS</label>
 				</form>
 			</section>
 
@@ -217,7 +225,8 @@
 		</section>
 		<section class="pages-container">
 			<div class="pages__link">
-				<a class="page__link-disabled" href=""> <img class="pages__less-than-icon" src=".././assets/icons/less_than.svg" /> </a>
+				<a class="page__link-disabled" href=""> <img class="pages__less-than-icon"
+						src=".././assets/icons/less_than.svg" /> </a>
 				<a class="page__link-current" href="">1</a>
 				<a href="">2</a>
 				<a href="">...</a>
@@ -228,7 +237,7 @@
 		</section>
 	</main>
 	<footer>
-		<div class="footer__nav">
+		<div class="footer__nav container">
 			<!-- para separar todos del copyright -->
 			<ul class="footer__menu">
 				<li><a href=".././index.html">INICIO</a></li>
