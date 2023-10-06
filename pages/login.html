@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/login-style.css">
-		<title>Login</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div>
-					<a href=".././index.html">
-						<img
-							src=".././assets/img/branding/logo_light_horizontal.svg"
-							alt="logo de funkoshop"
-						/>
-					</a>
-				</div>
-				<ul>
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="./contacto.html">Contacto</a></li>
-					<li><a href="./shop.html">Shop</a></li>
-					<li>
-						<a href="./shoppingCart.html">
-							<img
-								src=".././assets/icons/cart-icon.svg"
-								alt="icono del carro de compras"
-							/>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section>
-				<h2>Iniciar sesión</h2>
-				<form method="post" action="">
-					<label for="email">Email</label>
-					<input id="email" type="email" name="email" />
-					<label for="password">Password</label>
-					<input id="password" type="password" name="password" />
 
-					<button type="submit">Ingresar</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../css/login-style.css">
+	<title>Login</title>
+</head>
 
-					<label for="recordarme">recordarme</label>
-					<input id="recordarme" name="recordarme" type="checkbox" />
-				</form>
-			</section>
-			<a href="#">¿Olvido su contraseña?</a>
-		</main>
-		<footer>
-			<section>
-				<ul>
-					<li><a href=".././index.html">Inicio</a></li>
-					<li>
-						<a href="./register.html">Registrarse</a>
-					</li>
-					<li><a href="./contacto.html">Contacto</a></li>
-					<li><a href="./shop.html">Shop</a></li>
-				</ul>
-				<div>
-					<a href=".././index.html">
-						<img
-							src=".././assets/img/branding/isotype.svg"
-							alt="logo de funkoshop"
-						/>
+<body>
+	<header>
+		<nav class="navbar container">
+			<div class="navbar__logo">
+				<a href=".././index.html">
+					<img src=".././assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop" />
+				</a>
+			</div>
+
+			<div class="navbar__burger-icon">
+				<img class="navbar__bar" src=".././assets/icons/burger-bar.svg" alt="icono de barra de busqueda" />
+			</div>
+
+			<ul class="navbar__menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+				<li><a href="./shop.html">Shop</a></li>
+				<li>
+					<a href="./shoppingCart.html">
+						<img src=".././assets/icons/cart-icon.svg" alt="icono del carro de compras" />
 					</a>
-				</div>
-			</section>
-			<p>Todos los derechos reservados - comisión 23573 grupo 9</p>
-		</footer>
-	</body>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Iniciar sesión</h2>
+			<form method="post" action="">
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" />
+				<label for="password">Password</label>
+				<input id="password" type="password" name="password" />
+
+				<button type="submit">Ingresar</button>
+
+				<label for="recordarme">recordarme</label>
+				<input id="recordarme" name="recordarme" type="checkbox" />
+			</form>
+		</section>
+		<a href="#">¿Olvido su contraseña?</a>
+	</main>
+	<footer>
+		<section>
+			<ul>
+				<li><a href=".././index.html">Inicio</a></li>
+				<li>
+					<a href="./register.html">Registrarse</a>
+				</li>
+				<li><a href="./contacto.html">Contacto</a></li>
+				<li><a href="./shop.html">Shop</a></li>
+			</ul>
+			<div>
+				<a href=".././index.html">
+					<img src=".././assets/img/branding/isotype.svg" alt="logo de funkoshop" />
+				</a>
+			</div>
+		</section>
+		<p>Todos los derechos reservados - comisión 23573 grupo 9</p>
+	</footer>
+</body>
+
 </html>

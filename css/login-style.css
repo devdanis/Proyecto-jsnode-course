@@ -1,0 +1,115 @@
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+img {
+
+	width: 100%;
+
+}
+
+.container {
+
+	max-width: 320px;
+	margin: 0 auto;
+
+}
+
+ul>li {
+
+	margin: 0 5px 0 5px;
+	list-style: none;
+	padding: .5em;
+	transition: background-color .5s ease;
+
+}
+
+
+li:hover {
+
+	transition: background-color .5s ease;
+	background-color: #FF3333;
+
+}
+
+
+li>a {
+
+	text-decoration: none;
+	color: white;
+
+}
+
+/*HEADER START*/
+
+header {
+
+	background-color: #30344F;
+	padding: 18px;
+
+}
+
+.navbar {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.navbar__logo {
+
+	max-width: 150px;
+
+}
+
+.navbar__menu {
+
+	display: none;
+
+}
+
+
+
+@media(min-width: 1024px) {
+
+	header {
+
+		padding: 36px;
+		margin-bottom: 4em;
+
+	}
+
+	.container {
+
+		max-width: 1200px;
+		margin: 0 auto;
+
+	}
+
+	.navbar__logo {
+
+		max-width: 300px;
+
+	}
+
+	.navbar__burger-icon {
+
+		display: none;
+
+	}
+
+	.navbar__menu {
+
+		display: flex;
+		gap: 20px;
+		align-items: center;
+
+	}
+
+}
