@@ -3,13 +3,20 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 
 
 img {
 
 	width: 100%;
+
+}
+
+h1 {
+
+	font-size: 1.5em;
 
 }
 
@@ -22,7 +29,6 @@ img {
 
 ul>li {
 
-	margin: 0 5px 0 5px;
 	list-style: none;
 	padding: .5em;
 	transition: background-color .5s ease;
@@ -47,10 +53,12 @@ li>a {
 
 /*HEADER START*/
 
-header {
+header,
+footer {
 
-	background-color: #30344F;
+	background-color: #30343F;
 	padding: 18px;
+
 
 }
 
@@ -81,7 +89,7 @@ header {
 	header {
 
 		padding: 36px;
-		margin-bottom: 4em;
+		margin-bottom: 2.5em;
 
 	}
 
@@ -109,6 +117,189 @@ header {
 		display: flex;
 		gap: 20px;
 		align-items: center;
+
+	}
+
+}
+
+/*HEADERS END*/
+
+/*MAIN START*/
+
+main {
+
+	margin-top: 2.5em;
+
+}
+
+.main-container {
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.main__form-container {
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: .7em;
+}
+
+.main__form {
+
+	margin-bottom: 2em;
+
+}
+
+.form__div {
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+input {
+
+	height: 30px;
+	border: none;
+	border-bottom: 2px solid #FF3333;
+
+}
+
+input[type="checkbox"] {
+
+	height: 15px;
+	width: 15px;
+}
+
+.form__label {
+
+	margin: 1em .9em;
+	font-size: 1.5em;
+
+}
+
+.login {
+
+	align-items: center;
+	margin-top: 2em;
+	justify-content: center;
+
+}
+
+.form__button {
+
+	margin-right: 2.5em;
+	height: 3em;
+	width: 8em;
+	background-color: #FF3333;
+	color: white;
+	border: none;
+
+}
+
+.form__label-checkbox {
+
+	margin-left: .9em;
+	font-weight: 500;
+	color: #333333;
+
+}
+
+@media(min-width: 1024px) {
+
+	h1 {
+
+		font-size: 2.5em;
+
+	}
+
+	input {
+
+		width: 200px;
+		font-size: 1em;
+	}
+
+}
+
+/*MAIN END*/
+
+/*FOOTER START*/
+
+footer {
+
+	margin-top: 3em;
+
+}
+
+.footer__nav {
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+
+}
+
+.footer__menu {
+
+	display: flex;
+	justify-content: space-between;
+	margin: 3em 0;
+
+}
+
+.footer__logo {
+
+	margin-top: 2em;
+
+}
+
+.footer__copyright {
+
+	color: white;
+	text-align: center;
+
+}
+
+@media(min-width: 1024px) {
+
+	footer {
+
+		padding: 36px;
+
+	}
+
+	.footer__nav {
+
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+	.footer__menu {
+
+		display: block;
+
+
+	}
+
+	.footer__menu>li>a {
+
+		font-size: 1.1em;
+
+	}
+
+	.footer__copyright {
+
+		margin-top: 2em;
 
 	}
 
