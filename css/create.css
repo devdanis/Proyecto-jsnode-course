@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration:none;
+}
+
+.flex-direction {
+    display: flex;
+}
+.container {
+    width:1200px;
+    margin: 0 auto;
+}
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.paddings {
+    padding: 12px;
+}
+
+.paddings-titles {
+    padding: 0 10px 10px 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+/* HEADER */
+
+header {
+    background-color: #30343F;
+    padding: 36px;
+}
+
+.logo-header {
+    max-width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-link {
+    font-size:20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    transition:  background .3s ease-in-out;
+}
+
+.navbar-link:hover {
+    background-color: rgb(192, 30, 30);
+}
+
+.show-menu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    width: 300px;
+    display: none;
+    position: absolute;
+    background-color: #30343F;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-item {
+    display: flex;
+    flex-direction: column;
+}
+.submenu-link {
+    color: azure;
+    display: block;
+    padding: 8px 16px 8px;
+    font-size: medium;
+}
+
+.submenu-link:hover {
+    background-color: rgb(192, 30, 30);
+    transition:  background .3s ease-in-out;
+}
+
+
+/* main */
+
+.select {
+    width: 180px;
+    height: 28px;
+    color: rgb(182, 181, 181);
+}
+
+.label-items {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.light-label {
+    font-weight: 300;
+}
+
+textarea {
+    width: 800px;
+    height: 200px;
+}
+
+.name-product {
+    width: 250px;
+}
+
+
+input::placeholder {
+    color: rgb(182, 181, 181);
+}
+
+.input-line {
+    width: 100px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid red;
+}
+
+.buttons {
+    padding: 12px 0 12px 12px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: hsla(0, 100%, 60%, 1);
+    border: 0;
+    color: hsla(0, 0%, 100%, 1);
+}
+/* footer */
+
+footer {
+    position: relative;
+    background-color: #30343F;
+    padding: 68px;
+}
+
+.links-footer {
+    width: 100%;
+}
+
+.navbar-item {
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}

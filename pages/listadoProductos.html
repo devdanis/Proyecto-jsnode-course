@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/create.css">
     <title>listadoProductos</title>
 </head>
 <body>
     <header> <!-- encabezado -->
-        <nav> <!-- barra de navegacion -->
-        <div>
-        <a href="#"> <!-- logo -->
-                    <img src="./assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
-        </a>
-        </div>  
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">Shop</a>
-                </li>
-                <li>    
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./pages/login.html">Login</a>
-                </li>
-                <li>
-            <a href="./pages/shoppingCart.html">
-                        <img src="./assets/icons/cart-icon.svg" alt="icono del carro de compras">
-                    </a>
-                </li>
-            </ul>
+        <nav class="navbar container"> <!-- barra de navegacion -->
+            <div class="logo-header">
+                <a href=".././index.html"> <!-- logo -->
+                    <img src=".././assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
+                </a>
+            </div>
+
+                <ul class="navbar-menu">
+                    <li class="navbar-item show-menu"> <a class="navbar-link with-icon" href="../index.html">Home<iconify-icon icon="mdi:chevron-down"></iconify-icon></a> 
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="" class="submenu-link">Prueba</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Prueba</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Prueba</a></li>
+                    </ul>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./contacto.html">Contacto</a> </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./login.html">Login</a> </li>
+                    <li class="navbar-item">
+                        <a href="./shoppingCart.html">
+                            <img src="../assets/icons/cart-icon.svg" alt="icono del carro de compras">
+                        </a>
+                    </li>
+                </ul>
         </nav>
     </header>
 
-<section> <!-- <Search> -->
+<section class="container"> <!-- <Search> -->
     <form action="" method="get" enctype="application/x-www-form-urlencoded">
       <!-- <input type="search" value="Buscar"> -->
       <button type="submit"></button>
@@ -51,7 +54,7 @@
     </form>
 </section>
 
-<section><!-- <Items list> -->
+<section class="container"><!-- <Items list> -->
     <h1>LISTADO DE PRODUCTOS</h1>
 
     <table>
@@ -103,32 +106,36 @@
 
 </section>
 
-    <footer>
-        <nav>
-            <section> <!-- para separar todos del copyright -->
-                <ul>
-                    <li>
-                        <a href="./pages/shop.html">Shop</a>
-                    </li>
+<footer>
+    <nav class="navbar navbar-footer container">
+            <ul class="navbar-item submenu-item navbar-footer-items">
 
-                    <li>
-                        <a href="./pages/register.html">Registrarse</a>
-                    </li>
+                <li class="navbar-link navbar-footer-links"> 
+                    <a class="navbar-link links-footer" href="../index.html">Inicio</a>
+                </li>
 
-                    <li>
-                        <a href="./pages/contacto.html">Contacto</a>
-                    </li>
+                <li class="navbar-link">
+                    <a class="navbar-link links-footer" href="./register.html">Registrarse</a>
+                </li>
 
-                     <li>
-                        <a href="./pages/login.html">Login</a>
-                    </li>
-                </ul>
-                <a href="#"> <!-- logo -->
-                    <img src="./assets/img/branding/isotype.svg" alt="logo de funkoshop">
-                </a>
-            </section>
-            <p>todos los derechos reservados - comisión 23573 grupo 9</p>
+                <li class="navbar-link"> 
+                    <a class="navbar-link links-footer" href="./contacto.html">Contacto</a> 
+                </li>
+
+                <li class="navbar-link"> 
+                    <a class="navbar-link links-footer" href="./login.html">Login</a> 
+                </li>
+
+            </ul>
+
+            <picture>
+                <!-- <a href="../index.html"> logo -->
+                    <img src="../assets/img/branding/isotype.svg" alt="logo de funkoshop">
+                <!-- </a> -->
+            </picture>
         </nav>
-    </footer>
+        <p class="copyright">Todos los derechos reservados - comisión 23573 grupo 9</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
