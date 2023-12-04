@@ -23,11 +23,11 @@
                 </ul>
         </nav>
     </header>
-
+<main>
 <section class="container with-icon"> <!-- <Search> -->
     <form action="" method="get" enctype="application/x-www-form-urlencoded">
       <!-- <input type="search" value="Buscar"> -->
-      <button type="submit"><iconify-icon icon="ph:magnifying-glass-bold"></iconify-icon></button>
+      <button type="submit"><img src="../img/icons/search_icon.svg" alt="lupa"></button>
       <div>
         <label for="search"> </label>
         <input
@@ -42,18 +42,24 @@
     </form>
 </section>
 
-<section class="container"><!-- <Items list> -->
+<section class="table container"><!-- <Items list> -->
+  <nav class="navbar container">
     <h1>LISTADO DE PRODUCTOS</h1>
+    <ul class="navbar-menu">
+      <li class="navbar-item"> AGREGAR </li>
+      <li class="navbar-item"> <a class="navbar-link" href="./create.html"><iconify-icon icon="ic:baseline-plus"></iconify-icon></a> </li>
+    </ul>
+  </nav>
 
     <table>
-      <thead>
+      <thead class="thead">
         <tr>
           <th>ID</th>
           <th>Código</th>
           <th>Nombre del Producto</th>
           <th>Categoría</th>
-          <th>Editar</th>
-          <th>Borrar</th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -62,38 +68,38 @@
           <td>STW001001</td>
           <td>Baby Yoda Blueball</td>
           <td>STARWARS</td>
-          <th>Editar</th>
-          <th>Borrar</th>
+          <th><img src=".././img/icons/edit_pencil.svg" alt="edit_pencil"></th>
+          <th><img src=".././img/icons/delete_trash.svg" alt="delete_trash"></th>
         </tr>
         <tr>
           <td>2</td>
           <td>STW001002</td>
           <td>Boba Fett Fighter</td>
           <td>STARWARS</td>
-          <th>Editar</th>
-          <th>Borrar</th>
+          <th><img src=".././img/icons/edit_pencil.svg" alt="edit_pencil"></th>
+          <th><img src=".././img/icons/delete_trash.svg" alt="delete_trash"></th>
         </tr>
         <tr>
             <td>3</td>
             <td>STW001003</td>
             <td>Luke Skylwalker & Grogu</td>
             <td>STARWARS</td>
-            <th>Editar</th>
-            <th>Borrar</th>
+            <th><img src=".././img/icons/edit_pencil.svg" alt="edit_pencil"></th>
+            <th><img src=".././img/icons/delete_trash.svg" alt="delete_trash"></th>
           </tr>
           <tr>
             <td>4</td>
             <td>STW001004</td>
             <td>Stormtrooper Lightsaber</td>
             <td>STARWARS</td>
-            <th>Editar</th>
-            <th>Borrar</th>
+            <th><img src=".././img/icons/edit_pencil.svg" alt="edit_pencil"></th>
+            <th><img src=".././img/icons/delete_trash.svg" alt="delete_trash"></th>
           </tr>
       </tbody>
     </table>
 
 </section>
-
+</main>
 <footer class="footer">
     <nav class="navbar container">
             <ul class="navbar-item">
