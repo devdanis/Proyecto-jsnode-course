@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root{
@@ -63,6 +64,7 @@ html {
 }
 
 ul, ol {
+
     list-style-type: none;
 }
 
@@ -72,6 +74,7 @@ li {
 
 a {
     text-decoration:none;
+
     font-family: inherit;
     color: inherit
 }
@@ -102,23 +105,28 @@ body {
     font-family: var(--alternative-font);
     font-weight: 300;
     box-sizing: border-box;
+
 }
 
 .flex-direction {
     display: flex;
 }
 .container {
+
     max-width:1200px;
+
     margin: 0 auto;
 }
 .with-icon {
     display: flex;
     align-items: center;
+
     gap: var(--spacing-8);
 }
 
 .paddings {
     padding: var(--spacing-12);
+
 }
 
 .paddings-titles {
@@ -131,9 +139,11 @@ body {
 /* HEADER */
 
 header {
+
     font-family: var(--alternative-font);
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
+
 }
 
 .logo-header {
@@ -149,6 +159,7 @@ header {
 .navbar-menu {
     display: flex;
     align-items: center;
+
     gap: var(--spacing-20);
 }
 
@@ -164,6 +175,7 @@ header {
 
 .navbar-link:hover {
     background-color: var(--primary-900);
+
 }
 
 .show-menu:hover .submenu {
@@ -174,6 +186,7 @@ header {
     width: 300px;
     display: none;
     position: absolute;
+
     background-color: var(--dark-bg-solid);
     padding: 0;
     margin: 0;
@@ -184,6 +197,7 @@ header {
     flex-direction: column;
 }
 .submenu-link {
+
     color: var(--light-font-solid);
     display: block;
     padding: 8px 16px 8px;
@@ -191,6 +205,7 @@ header {
 }
 
 .submenu-link:hover {
+
     background-color: var(--primary-900);
     transition:  background .3s ease-in-out;
 }
@@ -258,6 +273,7 @@ textarea {
 .name-product {
     width: 250px;
 }
+
 
 input::placeholder {
     color: var(--light-bg-solid);
