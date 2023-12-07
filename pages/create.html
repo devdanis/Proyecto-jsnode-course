@@ -5,105 +5,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="../css/create.css">
     <title>Shop</title>
 </head>
 
 <body>
     <header> <!-- encabezado -->
-        <nav> <!-- barra de navegacion -->
-            <div>
+        <nav class="navbar container"> <!-- barra de navegacion -->
+            <div class="logo-header">
                 <a href=".././index.html"> <!-- logo -->
                     <img src=".././assets/img/branding/logo_light_horizontal.svg" alt="logo de funkoshop">
                 </a>
             </div>
-            <ul>
 
-                <li> <a href="../index.html">Home</a> </li>
-                <li> <a href="./contacto.html">Contacto</a> </li>
-                <li> <a href="./login.html">Login</a> </li>
-                <li>
-                    <a href="./shoppingCart.html">
-                        <img src="../assets/icons/cart-icon.svg" alt="icono del carro de compras">
-                    </a>
-                </li>
-            </ul>
+                <ul class="navbar-menu">
+                    <li class="navbar-item show-menu"> <a class="navbar-link with-icon" href="../index.html">Home<iconify-icon icon="mdi:chevron-down"></iconify-icon></a> 
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="" class="submenu-link">Prueba</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Prueba</a></li>
+                        <li class="submenu-item"><a href="" class="submenu-link">Prueba</a></li>
+                    </ul>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./contacto.html">Contacto</a> </li>
+                    <li class="navbar-item"> <a class="navbar-link" href="./login.html">Login</a> </li>
+                    <li class="navbar-item">
+                        <a href="./shoppingCart.html">
+                            <img src="../assets/icons/cart-icon.svg" alt="icono del carro de compras">
+                        </a>
+                    </li>
+                </ul>
         </nav>
     </header>
-    <section>
+
+    <section class="container">
         <h1>CREAR NUEVO ITEM</h1>
         <form method="post" action="">
-            <label for="categorias">Categoría:</label>
-            <select name="categorias" id="categorias">
-                <option>Seleccionar</option>
-                <!-- Agrega más opciones de categorías aquí -->
-            </select>
 
-            <label for="licencia">Licencia:</label>
-            <select id="licencia" name="licencia">
-                <option>Seleccionar</option>
-                <!-- Agrega más opciones de licencias aquí -->
-            </select>
+            <section class="paddings">
+                <label for="categorias" class="light-label paddings-titles">Categoría:</label>
+                <select name="categorias-select" class="select">
+                    <option class="categorias-option">Seleccionar</option>
+                    <!-- Agrega más opciones de categorías aquí -->
+                </select>
+    
+                <label for="licencia" class="light-label paddings-titles">Licencia:</label>
+                <select class="select" name="licencia-select">
+                    <option>Seleccionar</option>
+                    <!-- Agrega más opciones de licencias aquí -->
+                </select>
+            </section>
 
-            <label for="name-product">Nombre del producto:</label>
-            <input type="text" id="name-product" placeholder="Kakashi Hatake Shippuden Saga">
 
-            <label for="descripcion">Descripción del producto:</label>
-            <textarea id="descripcion" placeholder="Descripción del producto"></textarea>
+            <section class="paddings">
+                <label for="name-product" class="label-items">Nombre del producto:</label>
+                <input type="text" id="name-product" placeholder="Kakashi Hatake Shippuden Saga" class="name-product">
+            </section>
 
-            <label for="sku">SKU:</label>
-            <input type="text" id="sku" placeholder="SSK111AB001">
+            <section class="paddings">
+                <textarea id="descripcion" placeholder="Descripción del producto" class="descripcion">
+                    
+                </textarea>
+            </section>
 
-            <label for="precio">Precio:</label>
-            <input type="text" id="precio" placeholder="$0.00">
+            <section class="flex-direction paddings">
+                <label for="sku" class="label-items paddings-titles">SKU:</label>
+                <input type="text" id="sku" placeholder="SSK111AB001" class="input-line">
+    
+                <label for="precio" class="label-items paddings-titles">Precio:</label>
+                <input type="text" id="precio" placeholder="$0.00" class="input-line">
+    
+                <label for="stock" class="label-items paddings-titles">Stock:</label>
+                <input type="text" id="stock" placeholder="0" class="text-center input-line">
+            </section>
 
-            <label for="stock">Stock:</label>
-            <input type="text" id="stock" placeholder="0">
+            <section class="flex-direction paddings">
 
-            <label for="descuento">Descuento:</label>
-            <input type="text" id="descuento" placeholder="0%">
+                <label for="descuento" class="label-items paddings-titles">Descuento:</label>
+                <input type="text" id="descuento" placeholder="0%" class=" text-center input-line">
+    
+                <label for="cuotas" class="text-center  label-items paddings-titles">Cuotas:</label>
+                <select name="cuotas" id="cuotas" class="select ">
+                    <option>3 Cuotas sin interés</option>
+                    <!-- Agrega más opciones de cuotas aquí -->
+                </select>
+            </section>
 
-            <label for="cuotas">Cuotas:</label>
-            <select name="cuotas" id="cuotas">
-                <option>3 Cuotas sin interés</option>
-                <!-- Agrega más opciones de cuotas aquí -->
-            </select>
+            <section class="paddings"> 
+                <label for="imagenes" class="label-items paddings-titles">Imágenes:</label>
+                <input type="file" id="imagenes">
+            </section>
 
-            <label for="imagenes">Imágenes:</label>
-            <input type="file" id="imagenes">
-
-            <button>Agregar Producto</button>
-            <button>Limpiar</button>
+            <section class="buttons">
+                <button class="button">Agregar Producto</button>
+                <button class="button">Limpiar</button>
+            </section>
         </form>
 
     </section>
+
     <footer>
-        <nav>
-            <section> <!-- para separar todos del copyright -->
-                <ul>
+        <nav class="navbar navbar-footer container">
+                <ul class="navbar-item submenu-item navbar-footer-items">
 
-                    <li> <a href="../index.html">Inicio</a> </li>
-
-                    <li>
-                        <a href="./register.html">Registrarse</a>
+                    <li class="navbar-link navbar-footer-links"> 
+                        <a class="navbar-link links-footer" href="../index.html">Inicio</a>
                     </li>
 
-                    <li> <a href="./contacto.html">Contacto</a> </li>
-                    <li> <a href="./login.html">Login</a> </li>
+                    <li class="navbar-link">
+                        <a class="navbar-link links-footer" href="./register.html">Registrarse</a>
+                    </li>
+
+                    <li class="navbar-link"> 
+                        <a class="navbar-link links-footer" href="./contacto.html">Contacto</a> 
+                    </li>
+
+                    <li class="navbar-link"> 
+                        <a class="navbar-link links-footer" href="./login.html">Login</a> 
+                    </li>
 
                 </ul>
-                <div>
-                    <a href="../index.html"> <!-- logo -->
 
+                <picture>
+                    <!-- <a href="../index.html"> logo -->
                         <img src="../assets/img/branding/isotype.svg" alt="logo de funkoshop">
-
-                    </a>
-                </div>
-
-            </section>
-            <p>Todos los derechos reservados - comisión 23573 grupo 9</p>
-        </nav>
+                    <!-- </a> -->
+                </picture>
+            </nav>
+            <p class="copyright">Todos los derechos reservados - comisión 23573 grupo 9</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
